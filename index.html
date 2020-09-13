@@ -11,46 +11,34 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="head">
-        <div class="container fixed pl-8 pr-8 pt-8 mx-auto flex flex-row bg-gray-200 justify-between">
-            <div class="">
-                <h1>Burger</h1>
+    <header id="head" class="flex justify-center">
+        <div class="container fixed pl-8 pr-8 pt-3 pb-3 max-w-md flex flex-row max-w-sm bg-gray-200 justify-between">
+            <div class="text-3xl">
+                <h1><strong>BURGERMANIA</h1>
             </div>
-            <div class="">
-                <img class="w-10 h-10 rounded-full mr-4" src="img/perfil.jpg" alt="">
+            <div class="cursor-pointer">
+                <img class="w-10 h-10 rounded-full mr-4 " src="img/perfil.jpg" data-target="#modal" alt="">
             </div>
         </div>
+
     </header>
 
-    <section id="buscador-title" class="pl-8 pr-8">
+    <section id="buscador-title" class="pl-8 pr-8 pt-8">
         <div class="container-title">
-            <div class="pt-10 pb-4 text-2xl">
-                <h2>Comida popular</h2>
-            </div>
-            <div class="buscador">
+            <div class="buscador pt-10 pb-4 mt-5">
                 <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="email" placeholder="Busca tu comida">
             </div>
-            <div class="button pt-3">
+            <div class="button">
                 <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded w-full">
                     Buscar
                 </button>
                 
-                <style>
-                    .btn {
-                        @apply font-bold py-2 px-4 rounded;
-                    }
-                    .btn-blue {
-                        @apply bg-blue-500 text-white;
-                    }
-                    .btn-blue:hover {
-                        @apply bg-blue-700;
-                    }
-                </style>
             </div>
         </div>
     </section>
 
-    <section id="cards" class="pt-6">
+    <section id="cards" class="pt-6 ">
+
         <div class="container pl-8 pr-8">
             <div class="w-full lg:max-w-full lg:flex">
                 <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/burger-1.jpg')" title="Woman holding a mug">
@@ -65,11 +53,64 @@
                         <span>Añadir al carrito</span>
                       </button>    
                     </div>
-                    
-                </div>
-                
+                </div>     
             </div>
+        </div>
+        
+        <div class="container pl-8 pr-8 my-6">
+            <div class="w-full lg:max-w-full lg:flex">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/burger-2.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="text-gray-900 font-bold text-xl mb-2">Burger con huevo</div>
+                    <p class="text-gray-700 text-xs">Queso, Carne de res,huevo, lechuga y tomate.</p>
+                    <p class="text-gray-700 text-2xl">$us 20</p>
+                    <div class="contenedor-comprar pt-4">
+                        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <i class="fas fa-shopping-cart pr-4"></i>
+                        <span>Añadir al carrito</span>
+                      </button>    
+                    </div>
+                </div>     
+            </div>
+        </div>
+        
 
+        <div class="container pl-8 pr-8 my-6">
+            <div class="w-full lg:max-w-full lg:flex">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/burger-3.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="text-gray-900 font-bold text-xl mb-2">Burger con papas</div>
+                    <p class="text-gray-700 text-xs">Queso, Carne de res, papas, lechuga y tomate.</p>
+                    <p class="text-gray-700 text-2xl">$us 30</p>
+                    <div class="contenedor-comprar pt-4">
+                        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <i class="fas fa-shopping-cart pr-4"></i>
+                        <span>Añadir al carrito</span>
+                      </button>    
+                    </div>
+                </div>     
+            </div>
+        </div>
+        
+
+        <div class="container pl-8 pr-8 my-6">
+            <div class="w-full lg:max-w-full lg:flex">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/burger-4.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="text-gray-900 font-bold text-xl mb-2">Burger simle</div>
+                    <p class="text-gray-700 text-xs">Queso, Carne de res, lechuga y tomate.</p>
+                    <p class="text-gray-700 text-2xl">$us 10</p>
+                    <div class="contenedor-comprar pt-4">
+                        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <i class="fas fa-shopping-cart pr-4"></i>
+                        <span>Añadir al carrito</span>
+                      </button>    
+                    </div>
+                </div>     
+            </div>
         </div>
         
 
